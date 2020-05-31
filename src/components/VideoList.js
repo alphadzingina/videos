@@ -4,7 +4,7 @@ import VideoItem  from './VideoItem';
 const VideoList = (props) => {
     const renderedrList = props.videos.map((video) => {
         return(
-            <VideoItem video={video}/>
+            <VideoItem video={video} onVideoSelect={props.onVideoSelect}/>
         );
     });
 
